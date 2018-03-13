@@ -1,8 +1,8 @@
 import React from 'react';
-import { render } from 'react-dom';
 
 var buttonStyle = {
-    margin: '10px 10px 10px 0'
+    margin: '10px 10px 10px 0',
+    backgroundColor: 'green',
 
 };
 
@@ -11,10 +11,10 @@ class Button extends React.Component {
         return (<button
             className="btn btn-default"
             style={buttonStyle}
-            onClick={this.props.handleClick}>{this.props.label}</button>)
+            onClick={this.props.handleClick}>{this.props.buttonName}</button>)
     }
 }
 
-alert('gitTest');
+//alert('gitTest');
 
 export default Button;
